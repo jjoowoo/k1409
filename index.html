@@ -138,6 +138,7 @@
     </header>
 
     <main class="container mx-auto p-4 md:p-8">
+        <!-- Section 0: 조사 동기와 목적 -->
         <section id="motivation-purpose" class="mb-12">
             <h2 class="section-title">Ⅰ. 조사 동기와 목적</h2>
             <div class="card">
@@ -146,6 +147,7 @@
             </div>
         </section>
 
+        <!-- Section 1: 조사 계획 -->
         <section id="research-plan" class="mb-12">
             <h2 class="section-title">Ⅱ. 조사 계획</h2>
             <div class="grid md:grid-cols-3 gap-6">
@@ -169,10 +171,13 @@
             </div>
         </section>
 
+        <!-- Section 2: 조사 결과 - 설문조사 -->
         <section id="survey-results" class="mb-12">
             <h2 class="section-title">Ⅲ. 조사 결과 - 설문조사 분석</h2>
             <p class="mb-6 text-center text-gray-700">학생들은 생성형 AI를 다양한 목적으로 활용하고 있었으며, 그 유용성과 한계에 대해 비교적 명확히 인식하고 있었다.</p>
 
+            <!-- CHART/DIAGRAM: Chart.js Bar Chart for AI Usage Purposes -->
+            <!-- Description: Visualizes the primary uses of generative AI as reported by students (multiple responses allowed, N=18). -->
             <div class="card">
                 <h3 class="chart-title">설문 1: 생성형 AI 주요 활용 용도 (복수 응답, N=18)</h3>
                 <p class="text-sm text-center text-gray-600 mb-4">학생들은 생성형 AI를 주로 학습 자료 탐색과 코딩 문제 해결에 활용하는 것으로 나타났다.</p>
@@ -182,6 +187,8 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <!-- CHART/DIAGRAM: Chart.js Doughnut Chart for AI Information Trust Level -->
+                <!-- Description: Shows the level of trust students have in the accuracy of information provided by generative AI. -->
                 <div class="card">
                     <h3 class="chart-title">설문 2: AI 정보 신뢰도</h3>
                      <p class="text-sm text-center text-gray-600 mb-4">AI 정보에 대해 '신뢰한다'와 '보통이다' 응답이 주를 이루었다.</p>
@@ -190,6 +197,8 @@
                     </div>
                 </div>
 
+                <!-- CHART/DIAGRAM: Chart.js Doughnut Chart for AI Bias/Error Awareness -->
+                <!-- Description: Illustrates students' awareness of potential errors or biases in AI-generated content. -->
                 <div class="card">
                     <h3 class="chart-title">설문 3: AI 결과물 오류/편향 인식도</h3>
                     <p class="text-sm text-center text-gray-600 mb-4">대다수 학생들은 AI 생성물의 오류 및 편향 가능성을 인지했다.</p>
@@ -198,6 +207,8 @@
                     </div>
                 </div>
 
+                <!-- CHART/DIAGRAM: Chart.js Doughnut Chart for AI Information Verification Frequency -->
+                <!-- Description: Depicts how often students verify information or answers provided by generative AI. -->
                 <div class="card">
                     <h3 class="chart-title">설문 4: AI 정보 사실 확인 빈도</h3>
                     <p class="text-sm text-center text-gray-600 mb-4">절반 이상이 AI 답변을 검토하려는 태도를 보였다.</p>
@@ -211,6 +222,7 @@
             </div>
         </section>
 
+        <!-- Section 3: 조사 결과 - 인터뷰 요약 -->
         <section id="interview-summary" class="mb-12">
             <h2 class="section-title">Ⅲ. 조사 결과 - 인터뷰 요약</h2>
             <p class="mb-6 text-center text-gray-700">심층 인터뷰를 통해 AI 활용에 대한 학생들의 실제 경험과 인식을 파악했다.</p>
@@ -221,6 +233,11 @@
                         <li>생성형 AI를 '참고자료'로 한정하며 자신의 말투와 맞지 않으면 직접 수정하여 사용한다.</li>
                         <li>AI가 만든 결과를 그대로 사용하는 것에 대한 거부감이 있으며, 빠른 정답 제공이 오히려 성취감을 감소시킨다고 인식한다.</li>
                     </ul>
+                    <!-- CHART/DIAGRAM: Word Cloud Image -->
+                    <!-- Description: Word cloud visualizing key terms from the student interviews or survey responses. -->
+                    <div class="mt-4">
+                        <img src="src/스크린샷 2025-06-10 143824.png" alt="AI 활용 관련 워드클라우드" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
                 </div>
                 <div class="card">
                     <h3 class="font-semibold text-lg mb-2 primary-blue">홍성재 학생</h3>
@@ -232,6 +249,7 @@
             </div>
         </section>
 
+        <!-- Section 4: 결론 및 시사점 -->
         <section id="conclusion-implications" class="mb-12">
             <h2 class="section-title">Ⅳ. 결론 및 시사점</h2>
             <div class="card">
@@ -243,6 +261,7 @@
             </div>
         </section>
 
+        <!-- Section 5: 주요 발견점 및 제언 -->
         <section id="findings-suggestions" class="mb-12">
             <h2 class="section-title">Ⅴ. 주요 발견점 및 제언</h2>
             <div class="grid md:grid-cols-2 gap-6">
@@ -265,6 +284,7 @@
             </div>
         </section>
 
+        <!-- Section 6: 참고 자료 -->
         <section id="references" class="mb-12">
             <h2 class="section-title">Ⅵ. 참고 자료</h2>
             <div class="card">
@@ -553,5 +573,6 @@
         });
 
     </script>
-    </body>
+    <!-- 인포그래픽 생성 완료. 모든 콘텐츠는 단일 HTML 파일 내에 포함되었습니다. (Infographic generation complete. All content is embedded within this single HTML file.) -->
+</body>
 </html>
